@@ -1,6 +1,8 @@
 # iOS_Study
 iOS Study 레포지토리
 
-# 애플 공식 SwiftUI 튜토리얼
+# SwiftUI로 앱 만들어보기
 
-0529 시작 
+**각 프로젝트의 리드미로 이동됩니다**
+
+[기본 출력 날씨 앱](https://github.com/ITlearning/iOS_Study/blob/main/WeatherApp/README.md)
