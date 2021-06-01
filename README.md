@@ -11,6 +11,7 @@ iOS Study 레포지토리
 
 [고양이 정보 표시 앱](https://github.com/ITlearning/iOS_Study/blob/main/PJ1/README.md)
 
+[실시간 메신저 ](https://github.com/ITlearning/iOS_Study/blob/main/Messenger/README.md)
 
 ### 단순 UI 클론 앱
 
