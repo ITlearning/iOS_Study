@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class LoginViewController: UIViewController {
 
     private let scrollView: UIScrollView = {
@@ -125,7 +125,19 @@ class LoginViewController: UIViewController {
         }
         
         
-        // Firebase Log In
+        // Firebase
+        // 파이어 베이스쪽을 건드리고 앱을 삭제후 다시 설치하는 이유는
+        // 파이어 베이스 캐시가 남기때문에, 모든 걸 다 지우고 난 뒤에 시작해야 한다.
+        // 라는 말인듯 ;ㅁ;
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { authResult, error in
+            guard let result = authResult, error == nil else {
+                print("Failed to log in user with email: \(email)")
+                return
+            }
+            
+            let user = result.user
+            print("Logged In User: \(user)")
+        })
         
         
     }

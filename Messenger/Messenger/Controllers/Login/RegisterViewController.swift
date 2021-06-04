@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 //MARK: 가입 창 레이어
 class RegisterViewController: UIViewController {
     private let scrollView: UIScrollView = {
@@ -19,6 +20,9 @@ class RegisterViewController: UIViewController {
         imageView.image = UIImage(systemName: "person.crop.circle.fill.badge.plus")
         imageView.tintColor = .gray
         imageView.contentMode = .scaleAspectFit
+        imageView.layer.masksToBounds = true
+        imageView.layer.borderWidth = 2
+        imageView.layer.borderColor = UIColor.lightGray.cgColor
         return imageView
     }()
     
@@ -137,7 +141,7 @@ class RegisterViewController: UIViewController {
     
     // 가입화면 사진을 눌렀을 때의 액션 정의
     @objc private func didTapChangeProfilePic() {
-        print("Change pic called")
+        presentPhotoActionSheet()
     }
     
     
@@ -150,6 +154,8 @@ class RegisterViewController: UIViewController {
                                  y: 20,
                                  width: size,
                                  height: size)
+        
+        imageView.layer.cornerRadius = imageView.width/2.0
         
         firstNameField.frame = CGRect(x: 30,
                                   y: imageView.bottom+10,
@@ -201,6 +207,16 @@ class RegisterViewController: UIViewController {
         
         
         // Firebase Log In
+        
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
+            guard let result = authResult, error == nil else {
+                print("Error creating User")
+                return
+            }
+            
+            let user = result.user
+            print("Created User: \(user)")
+        })
     }
     
     
@@ -238,5 +254,55 @@ extension RegisterViewController: UITextFieldDelegate {
         }
         
         return true
+    }
+}
+
+// 카메라 롤에서 사진을 선택하는 익스텐션
+extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    // 사진 보여주는 액션 시트
+    func presentPhotoActionSheet() {
+        let actionSheet = UIAlertController(title: "Profile Picture", message: "How would like to select a picture?", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: {[weak self] _ in
+            self?.presentCamera()
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Choose Photo", style: .default, handler: { [weak self] _ in
+            self?.presentPhotoPicker()
+        }))
+        
+        present(actionSheet, animated: true)
+    }
+
+    
+    func presentCamera() {
+        let vc = UIImagePickerController()
+        vc.sourceType = .camera
+        vc.delegate = self
+        vc.allowsEditing = true // 사진 크롭 하는거
+        present(vc, animated: true)
+    }
+    
+    func presentPhotoPicker() {
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true // 사진 크롭 하는거
+        present(vc, animated: true)
+    }
+    
+    // 이미지를 픽 할때 컨트롤러
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        print(info)
+        guard let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
+            return
+        }
+        self.imageView.image = selectedImage
+    }
+    
+    // 이미지를 픽하지 않고 취소하는 경우
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
 }
