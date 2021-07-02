@@ -18,6 +18,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var progerssSlider: UISlider!
     
+    
     // 플레이어를 초기화 하는 메소드
     func initializePlayer() {
         
@@ -70,8 +71,107 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.timer = nil
     }
     
+    // 코드로 버튼과 레이블을 구현한 것
+    func addViewsWithCode() {
+        self.addPlayPauseButton()
+        self.addTimeLabel()
+        self.addProgressSlider()
+    }
+    
+    func addPlayPauseButton() {
+        
+        let button: UIButton = UIButton(type: UIButton.ButtonType.custom)
+        // 오토레이아웃 설정하기 위해 충돌방지 차 false
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(button)
+        
+        button.setImage(UIImage(named: "button_play"), for: UIControl.State.normal)
+        button.setImage(UIImage(named: "button_pause"), for: UIControl.State.selected)
+        
+        button.addTarget(self, action: #selector(self.touchUpPlayPauseButton(_:)), for: UIControl.Event.touchUpInside)
+        
+        let centerX: NSLayoutConstraint
+        centerX = button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        
+        let centerY: NSLayoutConstraint
+        centerY = NSLayoutConstraint(item: button, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 0.8, constant: 0)
+        
+        let width: NSLayoutConstraint
+        width = button.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5)
+        
+        let ratio: NSLayoutConstraint
+        ratio = button.heightAnchor.constraint(equalTo: button.widthAnchor, multiplier: 1)
+        
+        centerX.isActive = true
+        centerY.isActive = true
+        width.isActive = true
+        ratio.isActive = true
+        
+        self.playPauseButton = button
+    }
+    
+    func addTimeLabel() {
+        let timeLabel: UILabel = UILabel()
+        timeLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(timeLabel)
+        
+        timeLabel.textColor = UIColor.white
+        timeLabel.textAlignment = NSTextAlignment.center
+        timeLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
+        
+        let centerX: NSLayoutConstraint
+        centerX = timeLabel.centerXAnchor.constraint(equalTo: self.playPauseButton.centerXAnchor)
+        
+        let top: NSLayoutConstraint
+        top = timeLabel.topAnchor.constraint(equalTo: self.playPauseButton.bottomAnchor, constant: 8)
+        
+        centerX.isActive = true
+        top.isActive = true
+        
+        self.timeLabel = timeLabel
+        self.updateTimeLabelText(time: 0)
+    }
+    
+    func addProgressSlider() {
+        let slider: UISlider = UISlider()
+        slider.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(slider)
+        
+        slider.minimumTrackTintColor = UIColor.red
+        
+        slider.addTarget(self, action: #selector(self.SliderValueChanged(_:)), for: UIControl.Event.valueChanged)
+        
+        let safeAreaGuide: UILayoutGuide = self.view.safeAreaLayoutGuide
+        
+        let centerX: NSLayoutConstraint
+        centerX = slider.centerXAnchor.constraint(equalTo: self.timeLabel.centerXAnchor)
+        
+        let top: NSLayoutConstraint
+        top = slider.topAnchor.constraint(equalTo: self.timeLabel.bottomAnchor, constant: 8)
+        
+        let leading: NSLayoutConstraint
+        leading = slider.leadingAnchor.constraint(equalTo: safeAreaGuide.leadingAnchor, constant: 16)
+        
+        let triling: NSLayoutConstraint
+        triling = slider.trailingAnchor.constraint(equalTo: safeAreaGuide.trailingAnchor, constant: -16)
+        
+        centerX.isActive = true
+        top.isActive = true
+        leading.isActive = true
+        triling.isActive = true
+        
+        self.progerssSlider = slider
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.addViewsWithCode()
         self.initializePlayer()
     }
 
