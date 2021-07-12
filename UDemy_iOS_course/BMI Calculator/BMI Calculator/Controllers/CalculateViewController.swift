@@ -10,6 +10,8 @@ import UIKit
 
 class CalculateViewController: UIViewController {
     
+    var calculatorBrain = CalculatorBrain()
+    
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var heightSlider: UISlider!
@@ -18,7 +20,6 @@ class CalculateViewController: UIViewController {
     var value = "0.0"
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
@@ -37,9 +38,7 @@ class CalculateViewController: UIViewController {
         let height = heightSlider.value
         let weight = weightSlider.value
         
-        // pow 거듭제곱 기능
-        let bmi = weight / pow(height, 2)
-        value = String(format: "%.1f", bmi)
+        calculatorBrain.calculateBMI(height: height , weight: weight)
         // 스토리보드에서 지정해놓은 segue의 이름을 입력하면
         // 연결된 고유의 이름을 찾아 이동을 하는 역할을 해준다.
         // sender는 어디서 이동을 하는지에 대한 질문인데,
@@ -58,7 +57,9 @@ class CalculateViewController: UIViewController {
             // 이렇게 할 경우 원하는 값에 도달하지 못하게 된다.
             // 이럴때 as! ResultViewController 를 입력하면 가리키는 곳이 바뀌어 우리가 원하는 값에 도달할 수 있게 된다.
             let destinationVC = segue.destination as! ResultViewController
-            destinationVC.bmiValue = value
+            destinationVC.bmiValue = calculatorBrain.getBMIValue()
+            destinationVC.advice = calculatorBrain.getAdvice()
+            destinationVC.color = calculatorBrain.getColor()
         }
     }
 }
