@@ -8,13 +8,15 @@
 
 import UIKit
 
-class CalculatorViewController: UIViewController {
+class CalculatorViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var zeroPctButton: UIButton!
     @IBOutlet weak var tenPctButton: UIButton!
     @IBOutlet weak var twentyPctButton: UIButton!
-    @IBOutlet weak var splitNumberLabel: UIView!
+    @IBOutlet weak var splitNumberLabel: UILabel!
+    
+    
     
     
     var value = 0
@@ -26,18 +28,23 @@ class CalculatorViewController: UIViewController {
         zeroPctButton.isSelected = false
         twentyPctButton.isSelected = false
     }
+    
+    
     @IBAction func tipChanged(_ sender: UIButton) {
-        
+        billTextField.endEditing(true)
         cur = sender.currentTitle!
         if cur == "0%" {
+            cur = "0"
             zeroPctButton.isSelected = !zeroPctButton.isSelected
             tenPctButton.isSelected = false
             twentyPctButton.isSelected = false
         } else if cur == "10%" {
+            cur = "10"
             zeroPctButton.isSelected = false
             tenPctButton.isSelected = !tenPctButton.isSelected
             twentyPctButton.isSelected = false
         } else {
+            cur = "20"
             zeroPctButton.isSelected = false
             tenPctButton.isSelected = false
             twentyPctButton.isSelected = !twentyPctButton.isSelected
@@ -48,20 +55,28 @@ class CalculatorViewController: UIViewController {
     
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
-        
+        splitNumberLabel.text = String(format: "%.0f", sender.value)
     }
     
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-        if cur == "0%" {
-            print()
-        } else if cur == "10%" {
-            
-        } else {
-            zeroPctButton.isSelected = false
-            tenPctButton.isSelected = false
-            twentyPctButton.isSelected = !twentyPctButton.isSelected
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let bill = Float(billTextField.text!)
+        let people = Float(splitNumberLabel.text!)
+        let tip = Float(cur!)
+        let result = (bill! * (1 + tip! / 100)) / people!
+        if segue.identifier == "goToResult" {
+            let destVC = segue.destination as! ResultsViewController
+            destVC.tipNumber = cur!
+            destVC.peopleNumber = splitNumberLabel.text!
+            destVC.totalNumber = String(format: "%.2f", result)
         }
     }
 }
+
 
