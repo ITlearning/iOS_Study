@@ -5,6 +5,9 @@ iOS Study 레포지토리
 
 **각 프로젝트의 리드미로 이동됩니다**
 
+### 개인 프로젝트 앱
+[당진 버스 조회 앱](https://github.com/ITlearning/iOS_Study/blob/main/DB/README.md)
+
 ### 실제 구동 앱
 
 [SwiftUI 기본 출력 날씨 앱](https://github.com/ITlearning/iOS_Study/blob/main/WeatherApp/README.md)
@@ -16,5 +19,4 @@ iOS Study 레포지토리
 ### 단순 UI 클론 앱
 
 [SwiftUI YouTube UI Clone](https://github.com/ITlearning/iOS_Study/blob/main/UI_Practice/YouTubeUI%20Clone/README.md)
-
 
