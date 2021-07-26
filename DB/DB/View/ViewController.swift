@@ -9,30 +9,47 @@ import UIKit
 import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet weak var mainNavigation: UINavigationItem!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var subLocationLabel: UILabel!
     @IBOutlet weak var updateStatus: UILabel!
     var timer: Timer!
+    var effct = UIBlurEffect()
     var findLocation = CLLocation(latitude: 36.897700, longitude: 126.646463)
     let geocoder = CLGeocoder()
     let locale = Locale(identifier: "Ko-kr")
-    
+    var sendX: Double = 0.0
+    var sendY: Double = 0.0
     var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateStatus.alpha = 0
         
-        locationUp()
-        
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerProc), userInfo: nil, repeats: true)
         
-        // 위치정보 업데이트
+        // 네비게이션 바 블러처리
+        self.setNavigationBar()
+        locationUp()
+        // Back 버튼 글 없애고, 하얀색으로 변경
+        self.navigationItem.backButtonDisplayMode = .minimal
+        self.navigationController?.navigationBar.tintColor = .white
+    }
+    func setNavigationBar() {
+        let bounds = self.navigationController?.navigationBar.bounds as CGRect?
+        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .prominent))
+        visualEffectView.frame = bounds!
+        visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        
+        
+        
+        self.navigationController?.navigationBar.sendSubviewToBack(visualEffectView)
+        
         
     }
-        
     
     func locationUp() {
         //MARK: 로케이트된 곳 정보 땡겨오는 코드
@@ -67,8 +84,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 findLocation = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
                 print("위도: \(location.coordinate.latitude)")
                 print("경도: \(location.coordinate.longitude)")
+                sendX = location.coordinate.longitude
+                sendY = location.coordinate.latitude
             }
         }
+    
+    
+    @IBAction func nearBusButton(_ sender: UIButton) {
+        //self.performSegue(withIdentifier: "checkBus", sender: self)
+    }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
             print(error)
@@ -94,21 +118,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         timeLabel.text = aa
     }
     
-    
+    //MARK: 메인 수정 버튼 클릭 시
     @IBAction func touchEditButton(_ sender: Any) {
+            
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        if segue.identifier == "checkBus" {
+            
+            let destinationVC = segue.destination as! NearBusViewController
+            destinationVC.x = sendX
+            destinationVC.y = sendY
+        }
     }
 }
 
-
-extension String {
-    func stringFromDate() -> String {
-        let now = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = self
-        dateFormatter.locale = Locale(identifier: "ko_KR")
-        return dateFormatter.string(from: now)
-    }
-}
 
 

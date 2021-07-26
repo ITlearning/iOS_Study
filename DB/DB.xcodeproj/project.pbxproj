@@ -14,6 +14,11 @@
 		A8F8232C26A7F0C2006BCC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F8232B26A7F0C2006BCC36 /* Assets.xcassets */; };
 		A8F8232F26A7F0C2006BCC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F8232D26A7F0C2006BCC36 /* LaunchScreen.storyboard */; };
 		A8F8233B26A7F2A7006BCC36 /* sd.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F8233A26A7F2A7006BCC36 /* sd.png */; };
+		A8F8236C26AA5FFF006BCC36 /* NearBusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8236B26AA5FFF006BCC36 /* NearBusViewController.swift */; };
+		A8F8237626AA636D006BCC36 /* ODsaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F8236926AA510D006BCC36 /* ODsaySDK.framework */; };
+		A8F8237926AA8EAC006BCC36 /* parsingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8237826AA8EAB006BCC36 /* parsingData.swift */; };
+		A8F823A426AE7A0A006BCC36 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F823A326AE7A0A006BCC36 /* Result.swift */; };
+		A8F823A626AF0171006BCC36 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A8F823A526AF0171006BCC36 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,12 @@
 		A8F8232E26A7F0C2006BCC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8F8233026A7F0C2006BCC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8F8233A26A7F2A7006BCC36 /* sd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sd.png; path = "../../../Desktop/Assets.xcassets/free-icon-minibus-2820512.imageset/sd.png"; sourceTree = "<group>"; };
+		A8F8236926AA510D006BCC36 /* ODsaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ODsaySDK.framework; sourceTree = "<group>"; };
+		A8F8236A26AA562E006BCC36 /* Objective-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		A8F8236B26AA5FFF006BCC36 /* NearBusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearBusViewController.swift; sourceTree = "<group>"; };
+		A8F8237826AA8EAB006BCC36 /* parsingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parsingData.swift; sourceTree = "<group>"; };
+		A8F823A326AE7A0A006BCC36 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A8F823A526AF0171006BCC36 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F8237626AA636D006BCC36 /* ODsaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +54,9 @@
 		A8F8231626A7F0BF006BCC36 = {
 			isa = PBXGroup;
 			children = (
+				A8F823A526AF0171006BCC36 /* README.md */,
 				A8F8232126A7F0BF006BCC36 /* DB */,
+				A8F8236826AA5105006BCC36 /* Frameworks */,
 				A8F8232026A7F0BF006BCC36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +72,7 @@
 		A8F8232126A7F0BF006BCC36 /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				A8F8236A26AA562E006BCC36 /* Objective-C-Bridging-Header.h */,
 				A8F8233726A7F0CF006BCC36 /* View */,
 				A8F8233626A7F0CD006BCC36 /* Controller */,
 				A8F8232226A7F0BF006BCC36 /* AppDelegate.swift */,
@@ -81,9 +96,20 @@
 		A8F8233726A7F0CF006BCC36 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8F8237826AA8EAB006BCC36 /* parsingData.swift */,
 				A8F8232626A7F0BF006BCC36 /* ViewController.swift */,
+				A8F8236B26AA5FFF006BCC36 /* NearBusViewController.swift */,
+				A8F823A326AE7A0A006BCC36 /* Result.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A8F8236826AA5105006BCC36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8F8236926AA510D006BCC36 /* ODsaySDK.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +171,7 @@
 			files = (
 				A8F8233B26A7F2A7006BCC36 /* sd.png in Resources */,
 				A8F8232F26A7F0C2006BCC36 /* LaunchScreen.storyboard in Resources */,
+				A8F823A626AF0171006BCC36 /* README.md in Resources */,
 				A8F8232C26A7F0C2006BCC36 /* Assets.xcassets in Resources */,
 				A8F8232A26A7F0BF006BCC36 /* Main.storyboard in Resources */,
 			);
@@ -157,7 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F823A426AE7A0A006BCC36 /* Result.swift in Sources */,
+				A8F8237926AA8EAC006BCC36 /* parsingData.swift in Sources */,
 				A8F8232726A7F0BF006BCC36 /* ViewController.swift in Sources */,
+				A8F8236C26AA5FFF006BCC36 /* NearBusViewController.swift in Sources */,
 				A8F8232326A7F0BF006BCC36 /* AppDelegate.swift in Sources */,
 				A8F8232526A7F0BF006BCC36 /* SceneDelegate.swift in Sources */,
 			);
@@ -308,13 +338,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXTCSPNUZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/ODsaySDK",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ITlearning.com.DB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/itlearning/Documents/DB/DB/Objective-C-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,13 +363,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXTCSPNUZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/ODsaySDK",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ITlearning.com.DB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/itlearning/Documents/DB/DB/Objective-C-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
