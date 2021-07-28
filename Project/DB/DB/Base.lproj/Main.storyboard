@@ -181,20 +181,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주위 버스정류장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiv-J3-5jr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="주위 버스정류장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiv-J3-5jr">
                                 <rect key="frame" x="133" y="12" width="108" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5a8-Sy-qML">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="개수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5a8-Sy-qML">
                                 <rect key="frame" x="164" y="40.5" width="47" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="제일 가까운 버스정류장 5개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFQ-jG-RUJ">
-                                <rect key="frame" x="16" y="142" width="195" height="22"/>
+                                <rect key="frame" x="15" y="142" width="196" height="22"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -299,7 +299,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(만일 5개 미만일 경우 그 개수의 정류장만 뜹니다)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fUf-8m-Zjj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="(만일 5개 미만일 경우 그 개수의 정류장만 뜹니다)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fUf-8m-Zjj">
                                 <rect key="frame" x="15" y="172" width="345" height="22"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -311,16 +311,18 @@
                         <constraints>
                             <constraint firstItem="fUf-8m-Zjj" firstAttribute="leading" secondItem="woS-Pt-XsH" secondAttribute="leading" constant="15" id="1kj-Wi-QxH"/>
                             <constraint firstItem="woS-Pt-XsH" firstAttribute="trailing" secondItem="eOt-YC-ckg" secondAttribute="trailing" constant="15" id="2Vj-HU-NRU"/>
+                            <constraint firstItem="woS-Pt-XsH" firstAttribute="trailing" secondItem="YFQ-jG-RUJ" secondAttribute="trailing" constant="164" id="2X1-H6-MCR"/>
+                            <constraint firstItem="fUf-8m-Zjj" firstAttribute="top" secondItem="YFQ-jG-RUJ" secondAttribute="bottom" constant="8" id="5pr-AO-uDU"/>
                             <constraint firstItem="woS-Pt-XsH" firstAttribute="trailing" secondItem="G7l-EQ-WYS" secondAttribute="trailing" constant="15" id="6JC-vW-UUr"/>
                             <constraint firstItem="brN-9d-eO3" firstAttribute="leading" secondItem="woS-Pt-XsH" secondAttribute="leading" constant="15" id="6uc-DW-clP"/>
                             <constraint firstItem="fUf-8m-Zjj" firstAttribute="top" secondItem="YFQ-jG-RUJ" secondAttribute="bottom" constant="8" id="7mE-jn-zSv"/>
-                            <constraint firstItem="brN-9d-eO3" firstAttribute="top" secondItem="YFQ-jG-RUJ" secondAttribute="bottom" constant="50" id="9hp-q0-pmS"/>
                             <constraint firstItem="jiv-J3-5jr" firstAttribute="top" secondItem="woS-Pt-XsH" secondAttribute="top" constant="12" id="CJ0-iH-2gd"/>
                             <constraint firstItem="J7w-2T-9nK" firstAttribute="top" secondItem="G7l-EQ-WYS" secondAttribute="bottom" constant="30" id="Ceb-8x-N7P"/>
                             <constraint firstItem="woS-Pt-XsH" firstAttribute="trailing" secondItem="jiv-J3-5jr" secondAttribute="trailing" constant="134" id="IAu-sz-LC1"/>
                             <constraint firstItem="G7l-EQ-WYS" firstAttribute="leading" secondItem="woS-Pt-XsH" secondAttribute="leading" constant="15" id="M0R-WV-9xe"/>
                             <constraint firstItem="woS-Pt-XsH" firstAttribute="trailing" secondItem="5a8-Sy-qML" secondAttribute="trailing" constant="164" id="NQ2-bM-pYa"/>
                             <constraint firstItem="jiv-J3-5jr" firstAttribute="leading" secondItem="woS-Pt-XsH" secondAttribute="leading" constant="133" id="Ter-fW-cvD"/>
+                            <constraint firstItem="YFQ-jG-RUJ" firstAttribute="top" secondItem="5a8-Sy-qML" secondAttribute="bottom" constant="50" id="TwY-2Y-QCP"/>
                             <constraint firstItem="eOt-YC-ckg" firstAttribute="leading" secondItem="woS-Pt-XsH" secondAttribute="leading" constant="15" id="az3-ds-WDo"/>
                             <constraint firstItem="Cob-Ni-Q3W" firstAttribute="leading" secondItem="woS-Pt-XsH" secondAttribute="leading" constant="15" id="hCW-G0-J4s"/>
                             <constraint firstItem="woS-Pt-XsH" firstAttribute="trailing" secondItem="Cob-Ni-Q3W" secondAttribute="trailing" constant="15" id="hSR-oA-CE5"/>
@@ -335,6 +337,7 @@
                             <constraint firstItem="5a8-Sy-qML" firstAttribute="leading" secondItem="woS-Pt-XsH" secondAttribute="leading" constant="164" id="w7H-7b-1f4"/>
                             <constraint firstItem="brN-9d-eO3" firstAttribute="top" secondItem="fUf-8m-Zjj" secondAttribute="bottom" constant="20" id="xcR-ic-Xos"/>
                             <constraint firstItem="woS-Pt-XsH" firstAttribute="trailing" secondItem="fUf-8m-Zjj" secondAttribute="trailing" constant="15" id="y1e-lW-ecW"/>
+                            <constraint firstItem="YFQ-jG-RUJ" firstAttribute="leading" secondItem="woS-Pt-XsH" secondAttribute="leading" constant="15" id="ycR-Zf-N2X"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="주위 버스정류장 확인" id="PPG-Ms-iOr"/>

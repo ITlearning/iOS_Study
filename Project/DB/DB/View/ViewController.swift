@@ -15,6 +15,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var subLocationLabel: UILabel!
     @IBOutlet weak var updateStatus: UILabel!
+    @IBOutlet weak var nearBus: UILabel!
+    var bus: String?
+    let near = NearBusViewController()
+    var name: [String:Int] = [:]
+    
     var timer: Timer!
     var effct = UIBlurEffect()
     var findLocation = CLLocation(latitude: 36.897700, longitude: 126.646463)
@@ -27,7 +32,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateStatus.alpha = 0
-        
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerProc), userInfo: nil, repeats: true)
         
         // 네비게이션 바 블러처리
@@ -36,6 +40,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Back 버튼 글 없애고, 하얀색으로 변경
         self.navigationItem.backButtonDisplayMode = .minimal
         self.navigationController?.navigationBar.tintColor = .white
+
+        
     }
     func setNavigationBar() {
         let bounds = self.navigationController?.navigationBar.bounds as CGRect?

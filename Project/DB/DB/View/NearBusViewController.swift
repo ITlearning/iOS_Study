@@ -38,7 +38,7 @@ class NearBusViewController: UIViewController{
         
         ODsayService.sharedInst().setApiKey(loadAPI)
         ODsayService.sharedInst().setTimeout(10000)
-        ODsayService.sharedInst().requestPointSearch(abs(Float(x)), y: Float(y), radius: 750, stationClass: "1") { (retCode:Int32, resultDic:[AnyHashable : Any]!) in
+        ODsayService.sharedInst().requestPointSearch(abs(Float(x)), y: Float(y), radius: 500, stationClass: "1") { (retCode:Int32, resultDic:[AnyHashable : Any]!) in
             if retCode == 200 {
                 
                 // 버스정류장 이름 출력 코드 부분
@@ -46,7 +46,7 @@ class NearBusViewController: UIViewController{
                 let a = arr?["station"] as? [[String:Any]]
                 let count = arr?["count"] as? Int
                 // 위 코드까지는 탐색된 구간의 이름, 개수
-                self.nearBusCount.text = String(format:"%d",count!)+"개"
+                //self.nearBusCount.text = String(format:"%d",count!)+"개"
                 // 아래는 현 위치 좌표
                 let coord0 = CLLocation(latitude: self.x, longitude: self.y)
                 for i in 0...count!-1 {
@@ -60,6 +60,27 @@ class NearBusViewController: UIViewController{
                     print("떨어진 거리 : \(String(format: "%.0f",meter))M")
                     print()
                 }
+                if self.name.count > 0 {
+                    self.oneBusStop.text = self.name[0]
+                    self.oneDistance.text = self.distance[0]+"M"
+                }
+                if self.name.count > 1 {
+                    self.twoBusStop.text = self.name[1]
+                    self.twoDistance.text = self.distance[1]+"M"
+                }
+                if self.name.count > 2 {
+                    self.threeBusStop.text = self.name[2]
+                    self.threeDistance.text = self.distance[2]+"M"
+                }
+                if self.name.count > 3 {
+                    self.fourBusStop.text = self.name[3]
+                    self.fourDistance.text = self.distance[3]+"M"
+                }
+                if self.name.count > 4 {
+                    self.fiveBusStop.text = self.name[4]
+                    self.fiveDistance.text = self.distance[4]+"M"
+                }
+                
             } else {
                 self.displayErrorPopup(rMDic: resultDic)
             }
@@ -92,11 +113,12 @@ class NearBusViewController: UIViewController{
     
     }
     
-    func displayBus() {
-        for i in 0...4 {
-            if i > name.count {
-                
-            }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "checkBus" {
+            
+            let destinationVC = segue.destination as? ViewController
+            destinationVC?.bus = oneBusStop.text
         }
     }
 }
