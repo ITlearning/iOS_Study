@@ -11,4 +11,5 @@ import Foundation
 struct CoinData: Codable {
     let time: String
     let rate: Double
+    let asset_id_quote: String
 }

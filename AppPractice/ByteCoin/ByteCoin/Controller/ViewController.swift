@@ -14,10 +14,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var bitcoinLabel: UILabel!
     @IBOutlet weak var currencyPicker: UIPickerView!
+    
+    var coinManager = CoinManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         currencyPicker.dataSource = self
         currencyPicker.delegate = self
+        coinManager.delegate = self
     }
     
     // 구성요소 수 세팅
@@ -26,8 +29,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // 우린 그냥 각 화폐단위를 보여줄꺼니까 카테고리는 한개
         return 1
     }
-    
-    let coinManager = CoinManager()
     
     // 얘는 반환을 Int 로 하고
     // Picker에 보여지는 개수를 출력하는 듯 하다.
@@ -48,5 +49,22 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         let selectCurrencyArray = coinManager.currencyArray[row]
         // 선택한 화폐단위의 가치를 가져오는 메서드
         coinManager.getCoinPrice(for: selectCurrencyArray)
+    }
+}
+
+// exction 으로 리펙토링
+extension ViewController: CoinManagerDelegate {
+    // 프로토콜로 추가한 두개의 메서드를 정의
+    func didFailWithError(error: Error) {
+        print(error)
+    }
+    
+    // 매개변수는 하나면 충분
+    func didSelectedCoin(coin: CoinModel) {
+        DispatchQueue.main.async {
+            // 큐 돌리면서 앱 비동기 방식으로 하나하나~
+            self.bitcoinLabel.text = String(format: "%.2f", coin.rate)
+            self.currencyLabel.text = coin.asset_id_quote
+        }
     }
 }
