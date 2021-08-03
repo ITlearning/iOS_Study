@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B64222A98290E23F34756399EDA884 /* VerticalSlidingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE7CFB52EA71870109EB8246BDE232 /* VerticalSlidingPresentationController.swift */; };
+		0606914D0A760A238108802EFAC4D42E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		06E572F64093FD6A3E7F44D94544D9DE /* VerticalSlidingPresentationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93CBEA159488DA1C5FF4D9CC2D5099BA /* VerticalSlidingPresentationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11E832AA1570A7E4C886B5CD8E969E61 /* VerticalSlidingPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF7A32E90EF35E9D8B7118D0967D60 /* VerticalSlidingPresentedViewController.swift */; };
+		361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7268C1A2072249B778D53D6D597621 /* DropDownCell.swift */; };
+		4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724673C13F02C804DB89F847002D07D8 /* DPDUIView+Extension.swift */; };
+		4FA0302CAC75FED42E2E198380B94CED /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41C3C2F548074BA3E7DE1D9345E6FA /* UIKit+Extensions.swift */; };
+		5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7C9B3A79D475B15E2137AF75F3AEEF /* DPDConstants.swift */; };
+		6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A426EE6FDB95FE803FA5A4FE78DA174 /* DropDown+Appearance.swift */; };
+		69FB9875034162153483D7F23F932A2A /* VerticalSlidingTransitionAnimators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48ECC3C0EE1AD58E854A62784A2BA53 /* VerticalSlidingTransitionAnimators.swift */; };
+		6E89596B80578920160AB94099611645 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		78C34E3C73AB05EFF70A4F1BD40C6B1C /* Pods-NearCorona-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FE9BB266BA4014E2E72029F561C215 /* Pods-NearCorona-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFE2F13AF391243FC1601A934377EBA /* DropDown.swift */; };
+		89C21A6A7ECEEF2A83EA28EB40E9B6B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5C6A5F616106452C23E8D6A2EB17391 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4116C16DE3B74D738B1DD75C005427C8 /* DropDown-dummy.m */; };
+		A0E6A73B13CFEDEEB51F871D99086E34 /* Pods-NearCorona-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1246E52F003D23931C30DFE84FDEA /* Pods-NearCorona-dummy.m */; };
+		BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC1B35343C001F974F518585AE247E /* DPDKeyboardListener.swift */; };
+		C99487C04757ECF4F73FA1D4519CFD6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		CB3F89B4800D1DAA2448A297AD53498D /* VerticalSlidingPresentationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 816B1DD62DB9BB608787838DB5953950 /* VerticalSlidingPresentationController-dummy.m */; };
+		EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C848D60BFF42D8A0DB40E3853ACA0A /* DropDownCell.xib */; };
+		ECAC4DD8A4CE405E803405D5FECB016A /* VerticalSlidingInteractiveTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CE824ECC33085A8DCF6F77E22426C8 /* VerticalSlidingInteractiveTransitionController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C39A8002185E05BF7C604F7C630EA91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		B6B114DBF4C35D21C845F1F5D4F55BC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8329302E4FCC54964E20A70308BFC7F0;
+			remoteInfo = VerticalSlidingPresentationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18FC1B35343C001F974F518585AE247E /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		1A7268C1A2072249B778D53D6D597621 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		2D41C3C2F548074BA3E7DE1D9345E6FA /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "VerticalSlidingPresentationController/Sources/UIKit+Extensions.swift"; sourceTree = "<group>"; };
+		32C848D60BFF42D8A0DB40E3853ACA0A /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		4116C16DE3B74D738B1DD75C005427C8 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		4FDF7A32E90EF35E9D8B7118D0967D60 /* VerticalSlidingPresentedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalSlidingPresentedViewController.swift; path = VerticalSlidingPresentationController/Sources/VerticalSlidingPresentedViewController.swift; sourceTree = "<group>"; };
+		500DA91549ABD06263ADE5CC995A41F4 /* Pods-NearCorona-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NearCorona-acknowledgements.markdown"; sourceTree = "<group>"; };
+		58FE9BB266BA4014E2E72029F561C215 /* Pods-NearCorona-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NearCorona-umbrella.h"; sourceTree = "<group>"; };
+		5C8537BA35CE3EA49411D27390649DAD /* VerticalSlidingPresentationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VerticalSlidingPresentationController.modulemap; sourceTree = "<group>"; };
+		5E0AAB06CBE96EFD4441D84E82EEDEB0 /* VerticalSlidingPresentationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VerticalSlidingPresentationController-prefix.pch"; sourceTree = "<group>"; };
+		724673C13F02C804DB89F847002D07D8 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		7AE1246E52F003D23931C30DFE84FDEA /* Pods-NearCorona-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NearCorona-dummy.m"; sourceTree = "<group>"; };
+		7F1D52CFABBAD52130A8A9EB69E24A89 /* Pods_NearCorona.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NearCorona.framework; path = "Pods-NearCorona.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		816B1DD62DB9BB608787838DB5953950 /* VerticalSlidingPresentationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VerticalSlidingPresentationController-dummy.m"; sourceTree = "<group>"; };
+		894B6413F750F9DB15B28181608C2C68 /* VerticalSlidingPresentationController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VerticalSlidingPresentationController.debug.xcconfig; sourceTree = "<group>"; };
+		93CBEA159488DA1C5FF4D9CC2D5099BA /* VerticalSlidingPresentationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VerticalSlidingPresentationController-umbrella.h"; sourceTree = "<group>"; };
+		94CA20D90D906893462D008ABBDCB662 /* Pods-NearCorona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NearCorona.release.xcconfig"; sourceTree = "<group>"; };
+		9A426EE6FDB95FE803FA5A4FE78DA174 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5C6A5F616106452C23E8D6A2EB17391 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		A79801DACE8428E7AEADEE9088AE2D5D /* Pods-NearCorona-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NearCorona-frameworks.sh"; sourceTree = "<group>"; };
+		ACE26662DD269A524D5A2124D7206A77 /* VerticalSlidingPresentationController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VerticalSlidingPresentationController-Info.plist"; sourceTree = "<group>"; };
+		B1DA34E69799196DE3FEBE3FFC8496A0 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		BEFE2F13AF391243FC1601A934377EBA /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		C273A3480AE252EA18D1D5657966CA9D /* Pods-NearCorona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NearCorona.debug.xcconfig"; sourceTree = "<group>"; };
+		C47D55C3FA90EFAD7334A108E6531D01 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		CA69E80FA144A64D47E4AF1E2A1FA7FE /* Pods-NearCorona-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NearCorona-acknowledgements.plist"; sourceTree = "<group>"; };
+		D01DD20921C2622814C009E45EF2CE4F /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DF039AC9B0A5BAF7DBEFF5DE91784CEC /* VerticalSlidingPresentationController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VerticalSlidingPresentationController.release.xcconfig; sourceTree = "<group>"; };
+		E48ECC3C0EE1AD58E854A62784A2BA53 /* VerticalSlidingTransitionAnimators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalSlidingTransitionAnimators.swift; path = VerticalSlidingPresentationController/Sources/VerticalSlidingTransitionAnimators.swift; sourceTree = "<group>"; };
+		E6940AFA13CC847B24CCFE8339211990 /* Pods-NearCorona.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NearCorona.modulemap"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EFCE7CFB52EA71870109EB8246BDE232 /* VerticalSlidingPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalSlidingPresentationController.swift; path = VerticalSlidingPresentationController/Sources/VerticalSlidingPresentationController.swift; sourceTree = "<group>"; };
+		F7CE824ECC33085A8DCF6F77E22426C8 /* VerticalSlidingInteractiveTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalSlidingInteractiveTransitionController.swift; path = VerticalSlidingPresentationController/Sources/VerticalSlidingInteractiveTransitionController.swift; sourceTree = "<group>"; };
+		FB1DF6C5EA42D97C764731D3EAFC7041 /* Pods-NearCorona-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NearCorona-Info.plist"; sourceTree = "<group>"; };
+		FBD11C499E93465E7C2ADFB2523AE533 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		FC38C7FDBC1411A29EDD3E7AA98308CF /* VerticalSlidingPresentationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VerticalSlidingPresentationController.framework; path = VerticalSlidingPresentationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3ABBCF1FCFFFD917C0E44D6E80BBF1 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		FE7C9B3A79D475B15E2137AF75F3AEEF /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9727840973A9C2692E58F7089A7C243E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99487C04757ECF4F73FA1D4519CFD6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3CD2F9E12ECD31463725537FB9BAB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0606914D0A760A238108802EFAC4D42E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8404063998C0F97256966553F64B220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C21A6A7ECEEF2A83EA28EB40E9B6B3 /* Foundation.framework in Frameworks */,
+				6E89596B80578920160AB94099611645 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		053F87DA08A7AC6D4FB3AB8D43A2BFDA /* VerticalSlidingPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				2D41C3C2F548074BA3E7DE1D9345E6FA /* UIKit+Extensions.swift */,
+				F7CE824ECC33085A8DCF6F77E22426C8 /* VerticalSlidingInteractiveTransitionController.swift */,
+				EFCE7CFB52EA71870109EB8246BDE232 /* VerticalSlidingPresentationController.swift */,
+				4FDF7A32E90EF35E9D8B7118D0967D60 /* VerticalSlidingPresentedViewController.swift */,
+				E48ECC3C0EE1AD58E854A62784A2BA53 /* VerticalSlidingTransitionAnimators.swift */,
+				F142CFC1E232AF8334AE7F2C6AEE01C0 /* Support Files */,
+			);
+			name = VerticalSlidingPresentationController;
+			path = VerticalSlidingPresentationController;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25CB962B5E499F6EB0960106FAE1A3DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
+				7F1D52CFABBAD52130A8A9EB69E24A89 /* Pods_NearCorona.framework */,
+				FC38C7FDBC1411A29EDD3E7AA98308CF /* VerticalSlidingPresentationController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A3600EBAEF84EE711CE6ABF122B1F97 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C47D55C3FA90EFAD7334A108E6531D01 /* DropDown.modulemap */,
+				4116C16DE3B74D738B1DD75C005427C8 /* DropDown-dummy.m */,
+				D01DD20921C2622814C009E45EF2CE4F /* DropDown-Info.plist */,
+				B1DA34E69799196DE3FEBE3FFC8496A0 /* DropDown-prefix.pch */,
+				A5C6A5F616106452C23E8D6A2EB17391 /* DropDown-umbrella.h */,
+				FC3ABBCF1FCFFFD917C0E44D6E80BBF1 /* DropDown.debug.xcconfig */,
+				FBD11C499E93465E7C2ADFB2523AE533 /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		59A0A7F90A951B7210EA8E4DB68BCC85 /* Pods-NearCorona */ = {
+			isa = PBXGroup;
+			children = (
+				E6940AFA13CC847B24CCFE8339211990 /* Pods-NearCorona.modulemap */,
+				500DA91549ABD06263ADE5CC995A41F4 /* Pods-NearCorona-acknowledgements.markdown */,
+				CA69E80FA144A64D47E4AF1E2A1FA7FE /* Pods-NearCorona-acknowledgements.plist */,
+				7AE1246E52F003D23931C30DFE84FDEA /* Pods-NearCorona-dummy.m */,
+				A79801DACE8428E7AEADEE9088AE2D5D /* Pods-NearCorona-frameworks.sh */,
+				FB1DF6C5EA42D97C764731D3EAFC7041 /* Pods-NearCorona-Info.plist */,
+				58FE9BB266BA4014E2E72029F561C215 /* Pods-NearCorona-umbrella.h */,
+				C273A3480AE252EA18D1D5657966CA9D /* Pods-NearCorona.debug.xcconfig */,
+				94CA20D90D906893462D008ABBDCB662 /* Pods-NearCorona.release.xcconfig */,
+			);
+			name = "Pods-NearCorona";
+			path = "Target Support Files/Pods-NearCorona";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		71C399C9D3E8260EE1E0596515CC635E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5973FEB6CDDED0F9C1FF90C98F95252 /* DropDown */,
+				053F87DA08A7AC6D4FB3AB8D43A2BFDA /* VerticalSlidingPresentationController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EC47D5D8A7DCCD9640AAE2FFE35C726 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59A0A7F90A951B7210EA8E4DB68BCC85 /* Pods-NearCorona */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A8E47421DD87FD5669EDB3B2802DDE0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32C848D60BFF42D8A0DB40E3853ACA0A /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C5973FEB6CDDED0F9C1FF90C98F95252 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				FE7C9B3A79D475B15E2137AF75F3AEEF /* DPDConstants.swift */,
+				18FC1B35343C001F974F518585AE247E /* DPDKeyboardListener.swift */,
+				724673C13F02C804DB89F847002D07D8 /* DPDUIView+Extension.swift */,
+				BEFE2F13AF391243FC1601A934377EBA /* DropDown.swift */,
+				9A426EE6FDB95FE803FA5A4FE78DA174 /* DropDown+Appearance.swift */,
+				1A7268C1A2072249B778D53D6D597621 /* DropDownCell.swift */,
+				A8E47421DD87FD5669EDB3B2802DDE0E /* Resources */,
+				2A3600EBAEF84EE711CE6ABF122B1F97 /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				71C399C9D3E8260EE1E0596515CC635E /* Pods */,
+				25CB962B5E499F6EB0960106FAE1A3DD /* Products */,
+				9EC47D5D8A7DCCD9640AAE2FFE35C726 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F142CFC1E232AF8334AE7F2C6AEE01C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C8537BA35CE3EA49411D27390649DAD /* VerticalSlidingPresentationController.modulemap */,
+				816B1DD62DB9BB608787838DB5953950 /* VerticalSlidingPresentationController-dummy.m */,
+				ACE26662DD269A524D5A2124D7206A77 /* VerticalSlidingPresentationController-Info.plist */,
+				5E0AAB06CBE96EFD4441D84E82EEDEB0 /* VerticalSlidingPresentationController-prefix.pch */,
+				93CBEA159488DA1C5FF4D9CC2D5099BA /* VerticalSlidingPresentationController-umbrella.h */,
+				894B6413F750F9DB15B28181608C2C68 /* VerticalSlidingPresentationController.debug.xcconfig */,
+				DF039AC9B0A5BAF7DBEFF5DE91784CEC /* VerticalSlidingPresentationController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VerticalSlidingPresentationController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14A2B32422C2D325C54C6AED049B078B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E572F64093FD6A3E7F44D94544D9DE /* VerticalSlidingPresentationController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB5683F7D1AA8FB2F94DA252A664DB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A5DE281777045A9DF2EF9EA060E81F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C34E3C73AB05EFF70A4F1BD40C6B1C /* Pods-NearCorona-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8329302E4FCC54964E20A70308BFC7F0 /* VerticalSlidingPresentationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B74D771A6C5797617EE57183CD9C41B1 /* Build configuration list for PBXNativeTarget "VerticalSlidingPresentationController" */;
+			buildPhases = (
+				14A2B32422C2D325C54C6AED049B078B /* Headers */,
+				B1982CC69B91FDEED54689F128767832 /* Sources */,
+				E8404063998C0F97256966553F64B220 /* Frameworks */,
+				DE081DE3CCA85A3B1700CF9B278DEA65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VerticalSlidingPresentationController;
+			productName = VerticalSlidingPresentationController;
+			productReference = FC38C7FDBC1411A29EDD3E7AA98308CF /* VerticalSlidingPresentationController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBED57D13F9A2559E14BCD92E7CFF597 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				2BB5683F7D1AA8FB2F94DA252A664DB8 /* Headers */,
+				FAFA782452D3B598A37FB459CD314120 /* Sources */,
+				9727840973A9C2692E58F7089A7C243E /* Frameworks */,
+				D0143B72ED2669C4E98A5B8BBCE72151 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF3951F1130C04DE706B4123E74AB9EF /* Pods-NearCorona */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9345E42BE50DD0CD017FE85C6FF1FD9B /* Build configuration list for PBXNativeTarget "Pods-NearCorona" */;
+			buildPhases = (
+				D2A5DE281777045A9DF2EF9EA060E81F /* Headers */,
+				3E73E4A79080A4939C777C6A349B3C90 /* Sources */,
+				BB3CD2F9E12ECD31463725537FB9BAB0 /* Frameworks */,
+				9649593FCC04111E3E5FF09DF401DFA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FB7928DB3254114E886929193EA3F4B /* PBXTargetDependency */,
+				ACAB2FD6339C2165E43A19DFEF0AB4A5 /* PBXTargetDependency */,
+			);
+			name = "Pods-NearCorona";
+			productName = "Pods-NearCorona";
+			productReference = 7F1D52CFABBAD52130A8A9EB69E24A89 /* Pods_NearCorona.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 25CB962B5E499F6EB0960106FAE1A3DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
+				FF3951F1130C04DE706B4123E74AB9EF /* Pods-NearCorona */,
+				8329302E4FCC54964E20A70308BFC7F0 /* VerticalSlidingPresentationController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9649593FCC04111E3E5FF09DF401DFA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0143B72ED2669C4E98A5B8BBCE72151 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE081DE3CCA85A3B1700CF9B278DEA65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E73E4A79080A4939C777C6A349B3C90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E6A73B13CFEDEEB51F871D99086E34 /* Pods-NearCorona-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1982CC69B91FDEED54689F128767832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA0302CAC75FED42E2E198380B94CED /* UIKit+Extensions.swift in Sources */,
+				ECAC4DD8A4CE405E803405D5FECB016A /* VerticalSlidingInteractiveTransitionController.swift in Sources */,
+				CB3F89B4800D1DAA2448A297AD53498D /* VerticalSlidingPresentationController-dummy.m in Sources */,
+				00B64222A98290E23F34756399EDA884 /* VerticalSlidingPresentationController.swift in Sources */,
+				11E832AA1570A7E4C886B5CD8E969E61 /* VerticalSlidingPresentedViewController.swift in Sources */,
+				69FB9875034162153483D7F23F932A2A /* VerticalSlidingTransitionAnimators.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA782452D3B598A37FB459CD314120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */,
+				BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */,
+				4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */,
+				6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */,
+				95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */,
+				842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */,
+				361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FB7928DB3254114E886929193EA3F4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 3C39A8002185E05BF7C604F7C630EA91 /* PBXContainerItemProxy */;
+		};
+		ACAB2FD6339C2165E43A19DFEF0AB4A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VerticalSlidingPresentationController;
+			target = 8329302E4FCC54964E20A70308BFC7F0 /* VerticalSlidingPresentationController */;
+			targetProxy = B6B114DBF4C35D21C845F1F5D4F55BC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D68D769C30EF6AE6A64AE0A6DF11087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CA20D90D906893462D008ABBDCB662 /* Pods-NearCorona.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NearCorona/Pods-NearCorona-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NearCorona/Pods-NearCorona.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A17D27FFBCE427192C281661D3F5767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC3ABBCF1FCFFFD917C0E44D6E80BBF1 /* DropDown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56E1FC84B50CA86262452B591FADA5A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C273A3480AE252EA18D1D5657966CA9D /* Pods-NearCorona.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NearCorona/Pods-NearCorona-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NearCorona/Pods-NearCorona.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8642FB0DBF5A7986DCB1E85AEA2F5278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF039AC9B0A5BAF7DBEFF5DE91784CEC /* VerticalSlidingPresentationController.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VerticalSlidingPresentationController/VerticalSlidingPresentationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VerticalSlidingPresentationController/VerticalSlidingPresentationController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VerticalSlidingPresentationController/VerticalSlidingPresentationController.modulemap";
+				PRODUCT_MODULE_NAME = VerticalSlidingPresentationController;
+				PRODUCT_NAME = VerticalSlidingPresentationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B28DAA7DDFFF9A20AD710664AC96ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBD11C499E93465E7C2ADFB2523AE533 /* DropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6E6B186A9CAB93DADEA0DD47828B685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894B6413F750F9DB15B28181608C2C68 /* VerticalSlidingPresentationController.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VerticalSlidingPresentationController/VerticalSlidingPresentationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VerticalSlidingPresentationController/VerticalSlidingPresentationController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VerticalSlidingPresentationController/VerticalSlidingPresentationController.modulemap";
+				PRODUCT_MODULE_NAME = VerticalSlidingPresentationController;
+				PRODUCT_NAME = VerticalSlidingPresentationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9345E42BE50DD0CD017FE85C6FF1FD9B /* Build configuration list for PBXNativeTarget "Pods-NearCorona" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56E1FC84B50CA86262452B591FADA5A6 /* Debug */,
+				3D68D769C30EF6AE6A64AE0A6DF11087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B74D771A6C5797617EE57183CD9C41B1 /* Build configuration list for PBXNativeTarget "VerticalSlidingPresentationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E6B186A9CAB93DADEA0DD47828B685 /* Debug */,
+				8642FB0DBF5A7986DCB1E85AEA2F5278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBED57D13F9A2559E14BCD92E7CFF597 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A17D27FFBCE427192C281661D3F5767 /* Debug */,
+				8B28DAA7DDFFF9A20AD710664AC96ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
