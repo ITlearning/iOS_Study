@@ -1,0 +1,24 @@
+PODS:
+  - Gradients (0.3.0)
+  - ParallaxHeader (3.0.0)
+  - Pastel (0.6.0)
+
+DEPENDENCIES:
+  - Gradients
+  - ParallaxHeader (~> 3.0.0)
+  - Pastel
+
+SPEC REPOS:
+  trunk:
+    - Gradients
+    - ParallaxHeader
+    - Pastel
+
+SPEC CHECKSUMS:
+  Gradients: d7e1be639692b86577616ee55ea96f54fb5f1de1
+  ParallaxHeader: a343f55eb38f52a89c5820a77e14cf975b84e6aa
+  Pastel: 814f081efbe2859c37e65ee44f396e6e5be88619
+
+PODFILE CHECKSUM: 31bcb7b9b56ac8b9c8e23c7c99d4d5d8bcd144dc
+
+COCOAPODS: 1.10.1

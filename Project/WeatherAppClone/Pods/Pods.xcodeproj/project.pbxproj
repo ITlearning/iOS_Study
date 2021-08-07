@@ -1,0 +1,1008 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B43F9AD471FC854D2062C7FB9D2EA99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		36673132F384D15E05E88C8712900F4A /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0163156E9AFB9DB4A58428AC52A891C /* UIScrollView+ParallaxHeader.swift */; };
+		5434940BE2FB27D423F4E649EED13F56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5C72E85F8FABD170065F803847AB842C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5F46B77615FFBDE0CFD77B8A6FEA646C /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB55BCA7A19F340D05550596716B42 /* PastelView.swift */; };
+		67F3D3F39D5D25B7E3C3A1C32F22EA39 /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C443D8E125C613EF32C34BEF1B9E8988 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		730E07DF9AE3316DFDA09187D7145D1B /* Pods-WeatherAppClone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E4C6CC782ADBBFE5835080765C8F79 /* Pods-WeatherAppClone-dummy.m */; };
+		740EF5FDAA210AF9D438678186A429F1 /* Gradients-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695B98EEAD4EB02A5AB77728605A567 /* Gradients-dummy.m */; };
+		777DEAE0769CB23660690E6844F9E019 /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3482609DFB93B2023A0CB0942F34F9B1 /* ParallaxHeaderMode.swift */; };
+		7B242FC9A77233FD2902B6F203F07C55 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16A574FD0149E868476D386DC3C730 /* Gradients.swift */; };
+		924C58EA7C7B20A53D380589B2785C94 /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953695E36C48C0B213196A62710DE02 /* ParallaxHeader.swift */; };
+		9E5784B12FCB5B512CF072F1B05AF075 /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084DC3F54D06786A7E8C7BB2460C09D0 /* PastelPoint.swift */; };
+		A12460BE0B30215E4703A16EFD1A3524 /* Gradients+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99BFBB4FD5B9DB1F8152AACD9008655 /* Gradients+Layer.swift */; };
+		A86D3DB0B67FF29709A36E54A00B12E0 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8318B70427C24A2A74E02BB95EDB7CC3 /* PastelGradient.swift */; };
+		B84A25955BF580747114739660FB4B07 /* ParallaxHeader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 580095CCCC6D7E0D508D49924B9FF5D4 /* ParallaxHeader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B8D20601FF222DA61DFBEA646730BA /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87544BC230B9DEDB05E94839A90C647C /* Pastel-dummy.m */; };
+		C6BFCFB2721D2029FD9184F09F7830F4 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2456C1BCE1111B0FBE1F2B980E32B70 /* PastelLabel.swift */; };
+		CF15DBB23AF09E60F834EE756492FD99 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8B87F0E34C58F9011B91A04353A75 /* Direction.swift */; };
+		E58399A27AB06C772FD527A18B836F52 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19BD57C31F3C9F1151002A13FC076B4 /* Color+Extension.swift */; };
+		E6D57E60275095C8D1371B257775860C /* ParallaxHeader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A780EBFB4665CDF255FAFD1482CAD090 /* ParallaxHeader-dummy.m */; };
+		EF6E3161FFEF85CC4C0258ABAD982E67 /* Gradients+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E145722E805EAE63078690AF507667A /* Gradients+Name.swift */; };
+		F476BB195F4C10DD69D55241E1524E78 /* Pods-WeatherAppClone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 283A3D4A45184C0F6466A331BA54AE40 /* Pods-WeatherAppClone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F50990ED52AEADEE9B9EE72FE0F30AF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FA8576BD4F35B6C6E5D3DD906A8C7C84 /* Gradients-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 677533B8E7BD933066FF353F3F2BCF6B /* Gradients-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B9D2ACEE81E21CB472C85AED0EBF48E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223ACB2993ED61193B95A52611ED34E7;
+			remoteInfo = Pastel;
+		};
+		598A775190B760BCB59992D6B66CC0DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6AC9E8EAD1A04C654F71CF928069794;
+			remoteInfo = Gradients;
+		};
+		FFB0EB0E64925C0CFA22CE48884C9469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD303FB4EEC21644FD1411682B378434;
+			remoteInfo = ParallaxHeader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D433A214CF81E045C237ABB8CB21B3 /* ParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ParallaxHeader.framework; path = ParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		084DC3F54D06786A7E8C7BB2460C09D0 /* PastelPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelPoint.swift; path = Pastel/Classes/PastelPoint.swift; sourceTree = "<group>"; };
+		0BCCAB576983553DCAB747A3349F0B9A /* Pods-WeatherAppClone-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherAppClone-Info.plist"; sourceTree = "<group>"; };
+		0E145722E805EAE63078690AF507667A /* Gradients+Name.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Gradients+Name.swift"; path = "Gradients/Sources/Gradients+Name.swift"; sourceTree = "<group>"; };
+		116C609BFD06A00562B11B1B94CD2257 /* Pods_WeatherAppClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherAppClone.framework; path = "Pods-WeatherAppClone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5318CB1B090B56D08AF6675B46BDAD /* Gradients-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gradients-prefix.pch"; sourceTree = "<group>"; };
+		283A3D4A45184C0F6466A331BA54AE40 /* Pods-WeatherAppClone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherAppClone-umbrella.h"; sourceTree = "<group>"; };
+		2E8525A138A70FD2CB436C544EC41192 /* ParallaxHeader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ParallaxHeader-Info.plist"; sourceTree = "<group>"; };
+		344C6B511F91D9E65F4F2F4586A35718 /* Pastel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pastel-Info.plist"; sourceTree = "<group>"; };
+		3482609DFB93B2023A0CB0942F34F9B1 /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParallaxHeaderMode.swift; path = ParallaxHeader/ParallaxHeaderMode.swift; sourceTree = "<group>"; };
+		360845E00A1D969E682EDD33F16F675F /* Pastel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.release.xcconfig; sourceTree = "<group>"; };
+		3CC263A9275FABE1761BD0FA205DF583 /* ParallaxHeader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ParallaxHeader.modulemap; sourceTree = "<group>"; };
+		4953695E36C48C0B213196A62710DE02 /* ParallaxHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParallaxHeader.swift; path = ParallaxHeader/ParallaxHeader.swift; sourceTree = "<group>"; };
+		574A55E32BC692C50416AEE653E0F29A /* ParallaxHeader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ParallaxHeader.release.xcconfig; sourceTree = "<group>"; };
+		580095CCCC6D7E0D508D49924B9FF5D4 /* ParallaxHeader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ParallaxHeader-umbrella.h"; sourceTree = "<group>"; };
+		6697E318EE721555CDD415C3CCDCC18C /* Gradients-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Gradients-Info.plist"; sourceTree = "<group>"; };
+		677533B8E7BD933066FF353F3F2BCF6B /* Gradients-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gradients-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B547EEAFAADE19DEC9EEEE2CCA4ADBD /* ParallaxHeader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ParallaxHeader.debug.xcconfig; sourceTree = "<group>"; };
+		7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8318B70427C24A2A74E02BB95EDB7CC3 /* PastelGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelGradient.swift; path = Pastel/Classes/PastelGradient.swift; sourceTree = "<group>"; };
+		87544BC230B9DEDB05E94839A90C647C /* Pastel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pastel-dummy.m"; sourceTree = "<group>"; };
+		8B16A574FD0149E868476D386DC3C730 /* Gradients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gradients.swift; path = Gradients/Sources/Gradients.swift; sourceTree = "<group>"; };
+		915CF611F2D028450E5A4E71D2CB0C1A /* Pods-WeatherAppClone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherAppClone-acknowledgements.plist"; sourceTree = "<group>"; };
+		9305AE784B7E4F26AA530C0D8CEB5AF3 /* Pods-WeatherAppClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherAppClone.debug.xcconfig"; sourceTree = "<group>"; };
+		9695B98EEAD4EB02A5AB77728605A567 /* Gradients-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gradients-dummy.m"; sourceTree = "<group>"; };
+		981A42D94477BC20D43ADB99738357FC /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
+		9B96406441A39C5924226D6FA343CF3F /* Pods-WeatherAppClone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherAppClone-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9BABCAF61E40FFA0B39D1BCC61650A50 /* ParallaxHeader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ParallaxHeader-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0163156E9AFB9DB4A58428AC52A891C /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ParallaxHeader.swift"; path = "ParallaxHeader/UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
+		A780EBFB4665CDF255FAFD1482CAD090 /* ParallaxHeader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ParallaxHeader-dummy.m"; sourceTree = "<group>"; };
+		C2456C1BCE1111B0FBE1F2B980E32B70 /* PastelLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelLabel.swift; path = Pastel/Classes/PastelLabel.swift; sourceTree = "<group>"; };
+		C443D8E125C613EF32C34BEF1B9E8988 /* Pastel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-umbrella.h"; sourceTree = "<group>"; };
+		C5D80F93C9DAECCB8D76D0F0401E9FF4 /* Gradients.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Gradients.modulemap; sourceTree = "<group>"; };
+		CE66032BFFA4DA9DA32DFB6D277344BA /* Gradients.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gradients.release.xcconfig; sourceTree = "<group>"; };
+		D19BD57C31F3C9F1151002A13FC076B4 /* Color+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "Gradients/Sources/Color+Extension.swift"; sourceTree = "<group>"; };
+		D2F34E847B3A1FE628C9E56276B6D691 /* Pastel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pastel.debug.xcconfig; sourceTree = "<group>"; };
+		D4F7C68C3679959AF99E91B4867FF3EA /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pastel.modulemap; sourceTree = "<group>"; };
+		D6C452C31C8904008E5E1A611F16F050 /* Pods-WeatherAppClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherAppClone.release.xcconfig"; sourceTree = "<group>"; };
+		D94F29CAC1DBB7D488B29070F37C3DC4 /* Gradients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gradients.debug.xcconfig; sourceTree = "<group>"; };
+		DEAC0A14C67F97EE7D511F4E8C310344 /* Gradients.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gradients.framework; path = Gradients.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F8B87F0E34C58F9011B91A04353A75 /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Direction.swift; path = Gradients/Sources/Direction.swift; sourceTree = "<group>"; };
+		E99BFBB4FD5B9DB1F8152AACD9008655 /* Gradients+Layer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Gradients+Layer.swift"; path = "Gradients/Sources/Gradients+Layer.swift"; sourceTree = "<group>"; };
+		E9E4C6CC782ADBBFE5835080765C8F79 /* Pods-WeatherAppClone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherAppClone-dummy.m"; sourceTree = "<group>"; };
+		F466361F725CDDEF8BB96647E504F6D4 /* Pods-WeatherAppClone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherAppClone-frameworks.sh"; sourceTree = "<group>"; };
+		F77E24C43E947E9457CA7D4CE31A7E1D /* Pods-WeatherAppClone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeatherAppClone.modulemap"; sourceTree = "<group>"; };
+		F9CB55BCA7A19F340D05550596716B42 /* PastelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PastelView.swift; path = Pastel/Classes/PastelView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		633916D43C1FED89997608449F54C7EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C72E85F8FABD170065F803847AB842C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC32020512387E6FD30BECD6DCA0AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B43F9AD471FC854D2062C7FB9D2EA99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCF86BBADE8951885BE41C86D2050A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5434940BE2FB27D423F4E649EED13F56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3317600F1ED866518882E35E33107BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50990ED52AEADEE9B9EE72FE0F30AF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03FDDC3493BE54375D3C665D8F7848EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5D80F93C9DAECCB8D76D0F0401E9FF4 /* Gradients.modulemap */,
+				9695B98EEAD4EB02A5AB77728605A567 /* Gradients-dummy.m */,
+				6697E318EE721555CDD415C3CCDCC18C /* Gradients-Info.plist */,
+				1D5318CB1B090B56D08AF6675B46BDAD /* Gradients-prefix.pch */,
+				677533B8E7BD933066FF353F3F2BCF6B /* Gradients-umbrella.h */,
+				D94F29CAC1DBB7D488B29070F37C3DC4 /* Gradients.debug.xcconfig */,
+				CE66032BFFA4DA9DA32DFB6D277344BA /* Gradients.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Gradients";
+			sourceTree = "<group>";
+		};
+		30D8C1A230FF9CD262E5AE779BD0DF52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDD8B7813EBE06312424129CFBC44294 /* Gradients */,
+				4AC5919EA645D13C01A8770807532314 /* ParallaxHeader */,
+				634BA4768A7EC7064F8FB20AEA32CC81 /* Pastel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4AC5919EA645D13C01A8770807532314 /* ParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				4953695E36C48C0B213196A62710DE02 /* ParallaxHeader.swift */,
+				3482609DFB93B2023A0CB0942F34F9B1 /* ParallaxHeaderMode.swift */,
+				A0163156E9AFB9DB4A58428AC52A891C /* UIScrollView+ParallaxHeader.swift */,
+				5C9C65F877E60561657B30C21595B3B2 /* Support Files */,
+			);
+			name = ParallaxHeader;
+			path = ParallaxHeader;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5C9C65F877E60561657B30C21595B3B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CC263A9275FABE1761BD0FA205DF583 /* ParallaxHeader.modulemap */,
+				A780EBFB4665CDF255FAFD1482CAD090 /* ParallaxHeader-dummy.m */,
+				2E8525A138A70FD2CB436C544EC41192 /* ParallaxHeader-Info.plist */,
+				9BABCAF61E40FFA0B39D1BCC61650A50 /* ParallaxHeader-prefix.pch */,
+				580095CCCC6D7E0D508D49924B9FF5D4 /* ParallaxHeader-umbrella.h */,
+				7B547EEAFAADE19DEC9EEEE2CCA4ADBD /* ParallaxHeader.debug.xcconfig */,
+				574A55E32BC692C50416AEE653E0F29A /* ParallaxHeader.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ParallaxHeader";
+			sourceTree = "<group>";
+		};
+		61AB6FF310478673B7615E779FB7734D /* Pods-WeatherAppClone */ = {
+			isa = PBXGroup;
+			children = (
+				F77E24C43E947E9457CA7D4CE31A7E1D /* Pods-WeatherAppClone.modulemap */,
+				9B96406441A39C5924226D6FA343CF3F /* Pods-WeatherAppClone-acknowledgements.markdown */,
+				915CF611F2D028450E5A4E71D2CB0C1A /* Pods-WeatherAppClone-acknowledgements.plist */,
+				E9E4C6CC782ADBBFE5835080765C8F79 /* Pods-WeatherAppClone-dummy.m */,
+				F466361F725CDDEF8BB96647E504F6D4 /* Pods-WeatherAppClone-frameworks.sh */,
+				0BCCAB576983553DCAB747A3349F0B9A /* Pods-WeatherAppClone-Info.plist */,
+				283A3D4A45184C0F6466A331BA54AE40 /* Pods-WeatherAppClone-umbrella.h */,
+				9305AE784B7E4F26AA530C0D8CEB5AF3 /* Pods-WeatherAppClone.debug.xcconfig */,
+				D6C452C31C8904008E5E1A611F16F050 /* Pods-WeatherAppClone.release.xcconfig */,
+			);
+			name = "Pods-WeatherAppClone";
+			path = "Target Support Files/Pods-WeatherAppClone";
+			sourceTree = "<group>";
+		};
+		634BA4768A7EC7064F8FB20AEA32CC81 /* Pastel */ = {
+			isa = PBXGroup;
+			children = (
+				8318B70427C24A2A74E02BB95EDB7CC3 /* PastelGradient.swift */,
+				C2456C1BCE1111B0FBE1F2B980E32B70 /* PastelLabel.swift */,
+				084DC3F54D06786A7E8C7BB2460C09D0 /* PastelPoint.swift */,
+				F9CB55BCA7A19F340D05550596716B42 /* PastelView.swift */,
+				9681E07F9E60F6E316AC2DD274097B99 /* Support Files */,
+			);
+			name = Pastel;
+			path = Pastel;
+			sourceTree = "<group>";
+		};
+		6905E2DDA7D671B9B595FB3D66E419FA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61AB6FF310478673B7615E779FB7734D /* Pods-WeatherAppClone */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9681E07F9E60F6E316AC2DD274097B99 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4F7C68C3679959AF99E91B4867FF3EA /* Pastel.modulemap */,
+				87544BC230B9DEDB05E94839A90C647C /* Pastel-dummy.m */,
+				344C6B511F91D9E65F4F2F4586A35718 /* Pastel-Info.plist */,
+				981A42D94477BC20D43ADB99738357FC /* Pastel-prefix.pch */,
+				C443D8E125C613EF32C34BEF1B9E8988 /* Pastel-umbrella.h */,
+				D2F34E847B3A1FE628C9E56276B6D691 /* Pastel.debug.xcconfig */,
+				360845E00A1D969E682EDD33F16F675F /* Pastel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pastel";
+			sourceTree = "<group>";
+		};
+		CE42B6445976308149698FE9AD124BF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC0A14C67F97EE7D511F4E8C310344 /* Gradients.framework */,
+				02D433A214CF81E045C237ABB8CB21B3 /* ParallaxHeader.framework */,
+				7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel.framework */,
+				116C609BFD06A00562B11B1B94CD2257 /* Pods_WeatherAppClone.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				30D8C1A230FF9CD262E5AE779BD0DF52 /* Pods */,
+				CE42B6445976308149698FE9AD124BF1 /* Products */,
+				6905E2DDA7D671B9B595FB3D66E419FA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDD8B7813EBE06312424129CFBC44294 /* Gradients */ = {
+			isa = PBXGroup;
+			children = (
+				D19BD57C31F3C9F1151002A13FC076B4 /* Color+Extension.swift */,
+				E8F8B87F0E34C58F9011B91A04353A75 /* Direction.swift */,
+				8B16A574FD0149E868476D386DC3C730 /* Gradients.swift */,
+				E99BFBB4FD5B9DB1F8152AACD9008655 /* Gradients+Layer.swift */,
+				0E145722E805EAE63078690AF507667A /* Gradients+Name.swift */,
+				03FDDC3493BE54375D3C665D8F7848EF /* Support Files */,
+			);
+			name = Gradients;
+			path = Gradients;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19F4BFF1CE0A01DF3538F81B3187E536 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B84A25955BF580747114739660FB4B07 /* ParallaxHeader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C4057510969131C175C6270E1BA7F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F476BB195F4C10DD69D55241E1524E78 /* Pods-WeatherAppClone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60A019DF9962A957DDF5E20FEB399E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F3D3F39D5D25B7E3C3A1C32F22EA39 /* Pastel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB94C514A41A5120F8716453ABC693B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8576BD4F35B6C6E5D3DD906A8C7C84 /* Gradients-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		223ACB2993ED61193B95A52611ED34E7 /* Pastel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C50A4A5CEA57821BA3CD911B290D419 /* Build configuration list for PBXNativeTarget "Pastel" */;
+			buildPhases = (
+				C60A019DF9962A957DDF5E20FEB399E3 /* Headers */,
+				D5A4C040EDB49FEECE02D74495641FC7 /* Sources */,
+				633916D43C1FED89997608449F54C7EC /* Frameworks */,
+				3360140E99CC2CA2AD74233DDC25739E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pastel;
+			productName = Pastel;
+			productReference = 7E6869F153D7CB9C1B22DAF7252FF3E4 /* Pastel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		568C124B3FACA2502E0A8184C8D9157C /* Pods-WeatherAppClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491F0FD6C618BA8272E60839447EB0B9 /* Build configuration list for PBXNativeTarget "Pods-WeatherAppClone" */;
+			buildPhases = (
+				C0C4057510969131C175C6270E1BA7F1 /* Headers */,
+				587276999F240DECFAAB72584E7599C9 /* Sources */,
+				6CCF86BBADE8951885BE41C86D2050A4 /* Frameworks */,
+				CCED7AD093ECA51A50B6D77FA05DA2A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FAC4D1251F01542D31B2EB042EBB5E3 /* PBXTargetDependency */,
+				A48144E3AFBB3737E2C635C87F1D4FFE /* PBXTargetDependency */,
+				D696E05DE3B9CE124CDAD57857F4E732 /* PBXTargetDependency */,
+			);
+			name = "Pods-WeatherAppClone";
+			productName = "Pods-WeatherAppClone";
+			productReference = 116C609BFD06A00562B11B1B94CD2257 /* Pods_WeatherAppClone.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD303FB4EEC21644FD1411682B378434 /* ParallaxHeader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96452FF5B4E114F07EA0885F9D8D5E48 /* Build configuration list for PBXNativeTarget "ParallaxHeader" */;
+			buildPhases = (
+				19F4BFF1CE0A01DF3538F81B3187E536 /* Headers */,
+				8524866C9624C38FDB139929F23D1A65 /* Sources */,
+				6BC32020512387E6FD30BECD6DCA0AED /* Frameworks */,
+				E0184A1B8D6DCFDEF8EE3D2B6AF1876A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParallaxHeader;
+			productName = ParallaxHeader;
+			productReference = 02D433A214CF81E045C237ABB8CB21B3 /* ParallaxHeader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6AC9E8EAD1A04C654F71CF928069794 /* Gradients */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB23C694BAD3DBF82E724F86D65E6A69 /* Build configuration list for PBXNativeTarget "Gradients" */;
+			buildPhases = (
+				DB94C514A41A5120F8716453ABC693B3 /* Headers */,
+				00CD01A243378C8E33F40883BC6060F8 /* Sources */,
+				C3317600F1ED866518882E35E33107BE /* Frameworks */,
+				203C08E3E8A931A51360886AAB95C2AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gradients;
+			productName = Gradients;
+			productReference = DEAC0A14C67F97EE7D511F4E8C310344 /* Gradients.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CE42B6445976308149698FE9AD124BF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6AC9E8EAD1A04C654F71CF928069794 /* Gradients */,
+				AD303FB4EEC21644FD1411682B378434 /* ParallaxHeader */,
+				223ACB2993ED61193B95A52611ED34E7 /* Pastel */,
+				568C124B3FACA2502E0A8184C8D9157C /* Pods-WeatherAppClone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		203C08E3E8A931A51360886AAB95C2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3360140E99CC2CA2AD74233DDC25739E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCED7AD093ECA51A50B6D77FA05DA2A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0184A1B8D6DCFDEF8EE3D2B6AF1876A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00CD01A243378C8E33F40883BC6060F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58399A27AB06C772FD527A18B836F52 /* Color+Extension.swift in Sources */,
+				CF15DBB23AF09E60F834EE756492FD99 /* Direction.swift in Sources */,
+				A12460BE0B30215E4703A16EFD1A3524 /* Gradients+Layer.swift in Sources */,
+				EF6E3161FFEF85CC4C0258ABAD982E67 /* Gradients+Name.swift in Sources */,
+				740EF5FDAA210AF9D438678186A429F1 /* Gradients-dummy.m in Sources */,
+				7B242FC9A77233FD2902B6F203F07C55 /* Gradients.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		587276999F240DECFAAB72584E7599C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730E07DF9AE3316DFDA09187D7145D1B /* Pods-WeatherAppClone-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8524866C9624C38FDB139929F23D1A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6D57E60275095C8D1371B257775860C /* ParallaxHeader-dummy.m in Sources */,
+				924C58EA7C7B20A53D380589B2785C94 /* ParallaxHeader.swift in Sources */,
+				777DEAE0769CB23660690E6844F9E019 /* ParallaxHeaderMode.swift in Sources */,
+				36673132F384D15E05E88C8712900F4A /* UIScrollView+ParallaxHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A4C040EDB49FEECE02D74495641FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B8D20601FF222DA61DFBEA646730BA /* Pastel-dummy.m in Sources */,
+				A86D3DB0B67FF29709A36E54A00B12E0 /* PastelGradient.swift in Sources */,
+				C6BFCFB2721D2029FD9184F09F7830F4 /* PastelLabel.swift in Sources */,
+				9E5784B12FCB5B512CF072F1B05AF075 /* PastelPoint.swift in Sources */,
+				5F46B77615FFBDE0CFD77B8A6FEA646C /* PastelView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FAC4D1251F01542D31B2EB042EBB5E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gradients;
+			target = D6AC9E8EAD1A04C654F71CF928069794 /* Gradients */;
+			targetProxy = 598A775190B760BCB59992D6B66CC0DD /* PBXContainerItemProxy */;
+		};
+		A48144E3AFBB3737E2C635C87F1D4FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ParallaxHeader;
+			target = AD303FB4EEC21644FD1411682B378434 /* ParallaxHeader */;
+			targetProxy = FFB0EB0E64925C0CFA22CE48884C9469 /* PBXContainerItemProxy */;
+		};
+		D696E05DE3B9CE124CDAD57857F4E732 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pastel;
+			target = 223ACB2993ED61193B95A52611ED34E7 /* Pastel */;
+			targetProxy = 0B9D2ACEE81E21CB472C85AED0EBF48E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3751BE53BCAD7FC2ADB762DAC8C047C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9305AE784B7E4F26AA530C0D8CEB5AF3 /* Pods-WeatherAppClone.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherAppClone/Pods-WeatherAppClone-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherAppClone/Pods-WeatherAppClone.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4591E324571DA974366D08A6C4F37697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94F29CAC1DBB7D488B29070F37C3DC4 /* Gradients.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Gradients/Gradients-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gradients/Gradients-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Gradients/Gradients.modulemap";
+				PRODUCT_MODULE_NAME = Gradients;
+				PRODUCT_NAME = Gradients;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CED33D41681EE85B5BAC034467E1864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C452C31C8904008E5E1A611F16F050 /* Pods-WeatherAppClone.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherAppClone/Pods-WeatherAppClone-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherAppClone/Pods-WeatherAppClone.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9371C06E9861A63F13BA706BF873F18D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574A55E32BC692C50416AEE653E0F29A /* ParallaxHeader.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ParallaxHeader/ParallaxHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ParallaxHeader/ParallaxHeader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ParallaxHeader/ParallaxHeader.modulemap";
+				PRODUCT_MODULE_NAME = ParallaxHeader;
+				PRODUCT_NAME = ParallaxHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C76BA1D2C3B5168742BB038F0EFE72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360845E00A1D969E682EDD33F16F675F /* Pastel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				PRODUCT_MODULE_NAME = Pastel;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E567FEAA055E0DEDE9ED290BE13EF180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B547EEAFAADE19DEC9EEEE2CCA4ADBD /* ParallaxHeader.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ParallaxHeader/ParallaxHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ParallaxHeader/ParallaxHeader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ParallaxHeader/ParallaxHeader.modulemap";
+				PRODUCT_MODULE_NAME = ParallaxHeader;
+				PRODUCT_NAME = ParallaxHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC24B8FBF931096F0D6A32141C546775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2F34E847B3A1FE628C9E56276B6D691 /* Pastel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Pastel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				PRODUCT_MODULE_NAME = Pastel;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1646256565517B1EFCA40BD68C89124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE66032BFFA4DA9DA32DFB6D277344BA /* Gradients.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Gradients/Gradients-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gradients/Gradients-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Gradients/Gradients.modulemap";
+				PRODUCT_MODULE_NAME = Gradients;
+				PRODUCT_NAME = Gradients;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		491F0FD6C618BA8272E60839447EB0B9 /* Build configuration list for PBXNativeTarget "Pods-WeatherAppClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3751BE53BCAD7FC2ADB762DAC8C047C2 /* Debug */,
+				7CED33D41681EE85B5BAC034467E1864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96452FF5B4E114F07EA0885F9D8D5E48 /* Build configuration list for PBXNativeTarget "ParallaxHeader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E567FEAA055E0DEDE9ED290BE13EF180 /* Debug */,
+				9371C06E9861A63F13BA706BF873F18D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C50A4A5CEA57821BA3CD911B290D419 /* Build configuration list for PBXNativeTarget "Pastel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC24B8FBF931096F0D6A32141C546775 /* Debug */,
+				9C76BA1D2C3B5168742BB038F0EFE72E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB23C694BAD3DBF82E724F86D65E6A69 /* Build configuration list for PBXNativeTarget "Gradients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4591E324571DA974366D08A6C4F37697 /* Debug */,
+				F1646256565517B1EFCA40BD68C89124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
