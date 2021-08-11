@@ -299,6 +299,7 @@ PODS:
   - IQKeyboardManagerSwift (6.5.6)
   - leveldb-library (1.22.1)
   - MarqueeLabel (4.0.5)
+  - MKRingProgressView (2.2.3)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -319,6 +320,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - IQKeyboardManagerSwift
+  - MKRingProgressView
   - NotificationBannerSwift (~> 3.0.0)
   - SwiftOverlays (~> 5.0.1)
   - Tabman (~> 2.11)
@@ -341,6 +343,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - leveldb-library
     - MarqueeLabel
+    - MKRingProgressView
     - nanopb
     - NotificationBannerSwift
     - Pageboy
@@ -366,6 +369,7 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  MKRingProgressView: 404b3157e7a533ab8668d29ec20042c35d12ca1d
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NotificationBannerSwift: 7021be2338f8f29cf424b0aca43da462bf9e2a1a
   Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
@@ -375,6 +379,6 @@ SPEC CHECKSUMS:
   Tabman: 792ac76fd1ec95af175c93db880a3c47cabedc91
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 608ebe55d45137d4fc7cc3e9ec979491a30333e2
+PODFILE CHECKSUM: 5bea8c18a09830ce607bfcbcfaf8261c5dd14643
 
 COCOAPODS: 1.10.1

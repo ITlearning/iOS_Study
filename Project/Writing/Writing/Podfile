@@ -11,6 +11,7 @@ target 'Writing' do
   pod 'NotificationBannerSwift', '~> 3.0.0'
   pod 'SwiftOverlays', '~> 5.0.1'
   pod 'Tabman', '~> 2.11'
+  pod 'MKRingProgressView'
   # Pods for Writing
 
 end

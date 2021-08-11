@@ -28,7 +28,8 @@ class MainViewController: TabmanViewController {
         
         let bar = TMBar.TabBar()
         
-        bar.layout.transitionStyle = .snap
+        bar.layout.transitionStyle = .none
+        bar.scrollMode = .none
         bar.backgroundView.style = .custom(view: barBackground)
         
         bar.layout.contentInset = UIEdgeInsets(top: 3, left: 10, bottom: 5, right: 10)

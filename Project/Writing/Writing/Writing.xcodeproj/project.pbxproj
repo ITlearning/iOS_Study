@@ -26,6 +26,11 @@
 		A86D0B2226C1480F006EEC20 /* HashTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D0B2126C1480F006EEC20 /* HashTagViewController.swift */; };
 		A86D0B2426C14825006EEC20 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D0B2326C14825006EEC20 /* MoreViewController.swift */; };
 		A86D0B2F26C190BC006EEC20 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D0B2E26C190BC006EEC20 /* AlertViewController.swift */; };
+		A88F1FB426C2DDC500FE3223 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F1FB326C2DDC500FE3223 /* ChallengeViewController.swift */; };
+		A88F1FB626C2E61C00FE3223 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F1FB526C2E61C00FE3223 /* ChallengeTableViewCell.swift */; };
+		A88F1FB926C3AD9C00FE3223 /* Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F1FB826C3AD9C00FE3223 /* Writing.swift */; };
+		A88F1FBC26C4103900FE3223 /* HashTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F1FBA26C4103900FE3223 /* HashTagTableViewCell.swift */; };
+		A88F1FBD26C4103900FE3223 /* HashTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A88F1FBB26C4103900FE3223 /* HashTagTableViewCell.xib */; };
 		CDDFC5D2BD6B44319B775867 /* Pods_Writing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708E6CAE1B3E286AD7127BBE /* Pods_Writing.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +58,12 @@
 		A86D0B2126C1480F006EEC20 /* HashTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagViewController.swift; sourceTree = "<group>"; };
 		A86D0B2326C14825006EEC20 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		A86D0B2E26C190BC006EEC20 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		A88F1FB326C2DDC500FE3223 /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		A88F1FB526C2E61C00FE3223 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		A88F1FB726C3A83300FE3223 /* Cafe24Oneprettynight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24Oneprettynight.ttf; sourceTree = "<group>"; };
+		A88F1FB826C3AD9C00FE3223 /* Writing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writing.swift; sourceTree = "<group>"; };
+		A88F1FBA26C4103900FE3223 /* HashTagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagTableViewCell.swift; sourceTree = "<group>"; };
+		A88F1FBB26C4103900FE3223 /* HashTagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HashTagTableViewCell.xib; sourceTree = "<group>"; };
 		C949668AC1794F566681B940 /* Pods-Writing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Writing.release.xcconfig"; path = "Target Support Files/Pods-Writing/Pods-Writing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +103,7 @@
 				A853379B26BFBDF20030906E /* Products */,
 				7F1DD712A87A6764C4CD1840 /* Pods */,
 				0A45BA6248CD9A6D7F4A3DBC /* Frameworks */,
+				A88F1FB726C3A83300FE3223 /* Cafe24Oneprettynight.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				A85337A326BFBDF20030906E /* Main.storyboard */,
+				A88F1FBA26C4103900FE3223 /* HashTagTableViewCell.swift */,
+				A88F1FBB26C4103900FE3223 /* HashTagTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,6 +145,7 @@
 		A85337BA26BFDDA10030906E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A88F1FB226C2DD8A00FE3223 /* EtcControllers */,
 				A86D0B2726C170F5006EEC20 /* CustomTableViewCells */,
 				A85337C426C054750030906E /* TabBarControllers */,
 				A85337A126BFBDF20030906E /* ViewController.swift */,
@@ -146,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				A86D0B0F26C10B98006EEC20 /* ErrorModel.swift */,
+				A88F1FB826C3AD9C00FE3223 /* Writing.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,8 +182,17 @@
 		A86D0B2726C170F5006EEC20 /* CustomTableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				A88F1FB526C2E61C00FE3223 /* ChallengeTableViewCell.swift */,
 			);
 			path = CustomTableViewCells;
+			sourceTree = "<group>";
+		};
+		A88F1FB226C2DD8A00FE3223 /* EtcControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A88F1FB326C2DDC500FE3223 /* ChallengeViewController.swift */,
+			);
+			path = EtcControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +260,7 @@
 			files = (
 				A85337AA26BFBDF40030906E /* LaunchScreen.storyboard in Resources */,
 				A85337B426BFCD5C0030906E /* GoogleService-Info.plist in Resources */,
+				A88F1FBD26C4103900FE3223 /* HashTagTableViewCell.xib in Resources */,
 				A85337A726BFBDF40030906E /* Assets.xcassets in Resources */,
 				A86D0B1626C12C7E006EEC20 /* more-options.png in Resources */,
 				A85337A526BFBDF20030906E /* Main.storyboard in Resources */,
@@ -291,17 +317,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A86D0B1E26C147F8006EEC20 /* SearchViewController.swift in Sources */,
+				A88F1FB426C2DDC500FE3223 /* ChallengeViewController.swift in Sources */,
 				A86D0B2F26C190BC006EEC20 /* AlertViewController.swift in Sources */,
 				A86D0B2426C14825006EEC20 /* MoreViewController.swift in Sources */,
 				A86D0B1026C10B98006EEC20 /* ErrorModel.swift in Sources */,
 				A85337BF26C02C830030906E /* LoginViewController.swift in Sources */,
+				A88F1FBC26C4103900FE3223 /* HashTagTableViewCell.swift in Sources */,
 				A86D0B2026C147FF006EEC20 /* PlusViewController.swift in Sources */,
 				A85337B826BFDD8C0030906E /* SignUpViewController.swift in Sources */,
+				A88F1FB926C3AD9C00FE3223 /* Writing.swift in Sources */,
 				A85337B626BFD78D0030906E /* StartViewController.swift in Sources */,
 				A85337A226BFBDF20030906E /* ViewController.swift in Sources */,
 				A86D0B1C26C147F1006EEC20 /* HomeViewController.swift in Sources */,
 				A853379E26BFBDF20030906E /* AppDelegate.swift in Sources */,
 				A86D0B2226C1480F006EEC20 /* HashTagViewController.swift in Sources */,
+				A88F1FB626C2E61C00FE3223 /* ChallengeTableViewCell.swift in Sources */,
 				A85337A026BFBDF20030906E /* SceneDelegate.swift in Sources */,
 				A86D0B1A26C14295006EEC20 /* MainViewController.swift in Sources */,
 			);
